@@ -12,17 +12,29 @@
       <div class="card">
         <img src="assets/imgs/iphone11.jpg" alt="iphone11 fondo blanco" />
         <h2>iPhone 11</h2>
+        <p id="precio">499000</p>
         <p>Seleccione color:</p>
-        <br />
-        <select id="selector" onchange="">
+        <select id="color" onchange="">
           <option value="black">Negro</option>
           <option value="red">Rojo</option>
           <option value="blue">Azul</option>
+          <option value="white">Blanco</option>
         </select>
-        <p>Ingrese la cantidad:</p>
-        <input id="cantidad" type="text" />
-        <button>Calcular Total</button>
+
+        <input
+          id="cantidad"
+          type="text"
+          placeholder="Ingrese cantidad aqui"
+          value="1"
+        />
+
+        <button id="calctotal">Calcular Total</button>
         <p>Precio:<span></span></p>
+      </div>
+      <div class="calculadora" id="calculadora">
+        <p>Total: $<span id="total"></span></p>
+        <p>Cantidad: <span id="cant"></span></p>
+        <p>Color: <span</p>
       </div>
     </div>
     <script src="assets/js/index.js"></script>
