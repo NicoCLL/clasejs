@@ -12,29 +12,31 @@
       <div class="card">
         <img src="assets/imgs/iphone11.jpg" alt="iphone11 fondo blanco" />
         <h2>iPhone 11</h2>
-        <p id="precio">499000</p>
-        <p>Seleccione color:</p>
-        <select id="color" onchange="">
+        <p>Precio: $499.000</p>
+        <label for="cantidad">Ingresa Cantidad:</label>
+        <input type="text" id="" placeholder="Ingresa Cantidad" />
+        <label for="color">Selecciona color: </label>
+        <select id="color" name="color">
           <option value="black">Negro</option>
           <option value="red">Rojo</option>
           <option value="blue">Azul</option>
           <option value="white">Blanco</option>
         </select>
 
-        <input
-          id="cantidad"
-          type="text"
-          placeholder="Ingrese cantidad aqui"
-          value="1"
-        />
+        <label for="precio">Selecciona versión: </label>
+        <select name="precio" id="precio">
+          <option value="499000">$499.000</option>
+          <option value="549000">$549.000</option>
+          <option value="559000">$559.000</option>
+          <option value="649000">$649.000</option>
+        </select>
 
-        <button id="calctotal">Calcular Total</button>
-        <p>Precio:<span></span></p>
+        <button id="calctotal" onclick="">Calcular Total</button>
       </div>
       <div class="calculadora" id="calculadora">
-        <p>Total: $<span id="total"></span></p>
+        <p>Total: $<span id="total"></span></p> 
         <p>Cantidad: <span id="cant"></span></p>
-        <p>Color: <span</p>
+        <p>Color: <div id="circ" class="circulo"></div></p>
       </div>
     </div>
     <script src="assets/js/index.js"></script>
